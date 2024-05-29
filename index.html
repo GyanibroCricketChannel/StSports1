@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>@Gyani_Bro</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .jwplayer {
+            position: absolute !important;
+        }
+
+        .jwplayer.jw-flag-aspect-mode {
+            min-height: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="jwplayerDiv"></div>
+    <script src="//content.jwplatform.com/libraries/SAHhwvZq.js"></script>
+    <script type="text/javascript">
+        // Use the PHP configuration directly within the JavaScript
+        var config = {"file":"https://bpprod5catchup.akamaized.net/bpk-tv/irdeto_com_Channel_252/output/manifest.mpd?begin=20240525T010000&end=20240531T160000","drm":{"clearkey":{"keyId":"a226a087c85d5d4681cabf04e294f32e","key":"9a06fc716448b8ab388df9b43bf92107"}}};
+
+        jwplayer("jwplayerDiv").setup({
+            file: config.file,
+            position: 'bottom',
+            autostart: true,
+            stretching: "",
+            width: "100%",
+            type: "dash",
+            drm: {
+                clearkey: {
+                    keyId: config.drm.clearkey.keyId,
+                    key: config.drm.clearkey.key
+                }
+            }
+        });
+		!0 == confirm("Join our Telegram Group to get All Updates @WatchAddLive") && window.open("https://telegram.me/WatchAddaLive", "_blank");
+    </script>
+</body>
+</html>
+
+ac788a40d8725805afbdd0ec82ed08a2","key":"9f1367203bc4f8872b5c6d57f84ac8da
